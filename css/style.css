@@ -1,6 +1,11 @@
 @font-face {
-  font-family: myFirstFont;
-  src: url(sansation_light.woff);
+  font-family: ABC Diatype Regular;
+  src: url(../fonts/ABCDiatype-Regular.woff);
+}
+
+@font-face {
+  font-family: Telegraf Regular;
+  src: url(../fonts/Telegraf-Regular.woff);
 }
 
 body, html {
@@ -9,7 +14,7 @@ body, html {
   }
   
   .bgimg {
-    background-image: url('../images/forestbridge.jpg');
+    background-image: url('../images/3.webp');
     height: 100%;
     background-position: center;
     background-size: cover;
@@ -40,10 +45,17 @@ body, html {
   }
 
   .middle h1 {
-    
+    font-family: Telegraf Regular;
+    font-size: 48px;
   }
   
   hr {
     margin: auto;
     width: 40%;
+    color: white;
+  }
+
+  #demo {
+    font-family: ABC Diatype Regular;
+    font-size: 36px;
   }
