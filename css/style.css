@@ -59,3 +59,20 @@ body, html {
     font-family: ABC Diatype Regular;
     font-size: 36px;
   }
+  
+  #blurry-circles{transition:opacity 500ms ease-out;animation-name:circleson;animation-duration:1s;animation-timing-function:ease-out;animation-iteration-count:1;animation-fill-mode:both}@keyframes circleson{0%{opacity:0}100%{opacity:1}}
+  .background{width:100vw;height:100vh;background:0 0;position:absolute;z-index:0;-webkit-transform:translate3d(0,0,0)}.background span{width:100vmin;height:100vmin;border-radius:60vmin;backface-visibility:hidden;position:absolute;animation-name:move;animation-duration:6s;animation-timing-function:linear;animation-iteration-count:infinite;transition:opacity 1s ease-in-out}.background span:nth-child(1){color:#184646;top:66%;left:84%;animation-duration:13.2s;animation-delay:-11s;transform-origin:-1vw 3vh;box-shadow:-120vmin 0 10.7395569339vmin currentColor}.background span:nth-child(2){color:#ff800c;top:89%;left:24%;animation-duration:12.6s;animation-delay:-15.9s;transform-origin:-2vw -2vh;box-shadow:-120vmin 0 12.4319763489vmin currentColor}.background span:nth-child(3){color:#6e6bdf;top:20%;left:48%;animation-duration:16.6s;animation-delay:-8.8s;transform-origin:-5vw -5vh;box-shadow:-120vmin 0 7.869308108vmin currentColor}@keyframes move{100%{transform:translate3d(0,0,1px) rotate(360deg)}}
+  
+  #container-hey {
+    position: relative;
+    height: calc(100vh - 60px);
+    width: calc(100% - 20px);
+    border-radius: var(--radiussection);
+    margin: auto;
+        margin-top: auto;
+    background-color: var(--lightcream);
+    margin-top: 50px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
