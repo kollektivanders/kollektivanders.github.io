@@ -256,7 +256,8 @@ body, html {
 
 .menu__item {
 	position: relative;
-	padding: 0 6vw;
+	padding: 0 6vw 0vw 6vw;
+
 }
 
 .menu__item-link {
@@ -284,7 +285,7 @@ body, html {
 	z-index: 2;
 	pointer-events: none;
 	position: absolute;
-	height: 12vh;
+	height: 14vh;
 	max-height: 600px;
 	opacity: 0;
 	left: 8%;
