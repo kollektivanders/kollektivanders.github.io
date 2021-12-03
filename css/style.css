@@ -113,14 +113,14 @@ body, html {
 .landingpage h1 {
   position: relative;
   font-family: Telegraf Regular;
-  font-size: 5.270863836017569vw;
+  font-size: 72px;
   margin-top: 10%;
 }
 
 .landingpage h2 {
   position: relative;
   font-family: ABC Diatype Regular;
-  font-size: 3.513909224011713vw;
+  font-size: 48px;
 }
 
 .landingpage a {
@@ -129,5 +129,42 @@ body, html {
   background: chartreuse;
   font-family: ABC Diatype Regular;
   border-radius: 10px;
-  font-size: 1.7569546120058566vw;
+  font-size: 24px;
+}
+
+.landingpage a:hover {
+  position: relative;
+  padding: 10px 20px 10px 20px;
+  background: rgb(191, 255, 126);
+  font-family: ABC Diatype Regular;
+  border-radius: 10px;
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 900px) {
+  .landingpage {
+    text-align: center;
+  }
+  
+  .landingpage h1 {
+    position: relative;
+    font-family: Telegraf Regular;
+    font-size: 48px;
+    margin-top: 25%;
+  }
+  
+  .landingpage h2 {
+    position: relative;
+    font-family: ABC Diatype Regular;
+    font-size: 36px;
+  }
+  
+  .landingpage a {
+    position: relative;
+    padding: 10px 20px 10px 20px;
+    background: chartreuse;
+    font-family: ABC Diatype Regular;
+    border-radius: 10px;
+    font-size: 24px;
+  }
 }
