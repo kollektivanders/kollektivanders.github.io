@@ -8,6 +8,11 @@
   src: url(../fonts/Telegraf-Regular.woff);
 }
 
+@font-face {
+  font-family: Editorial New Light;
+  src: url(../fonts/EditorialNew-LightItalic.woff);
+}
+
 body, html {
   height: 100%;
   margin: 0;
@@ -114,13 +119,36 @@ body, html {
   position: relative;
   font-family: Telegraf Regular;
   font-size: 72px;
+  font-weight: normal;
   margin-top: 10%;
 }
+
+/*
+.landingpage h1:nth-child(odd) {
+  position: relative;
+  font-family: Telegraf Regular;
+  font-size: 72px;
+  font-weight: normal;
+  margin: 0;
+  margin-right: 10%;
+  padding-top: 5%;
+}
+
+.landingpage h1:nth-child(even) {
+  position: relative;
+  font-family: Editorial New Light;
+  font-size: 72px;
+  font-weight: normal;
+  margin: 0;
+  margin-left: 10%;
+}
+*/
 
 .landingpage h2 {
   position: relative;
   font-family: ABC Diatype Regular;
   font-size: 48px;
+  font-weight: normal;
 }
 
 .landingpage a {
@@ -150,7 +178,6 @@ body, html {
     position: relative;
     font-family: Telegraf Regular;
     font-size: 48px;
-    margin-top: 25%;
   }
   
   .landingpage h2 {
