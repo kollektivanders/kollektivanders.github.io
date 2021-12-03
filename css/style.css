@@ -13,10 +13,22 @@
   src: url(../fonts/EditorialNew-LightItalic.woff);
 }
 
+@font-face {
+  font-family: Neue World Condensed Light;
+  src: url(../fonts/NeueWorld-CondensedLight.otf);
+}
+
+@font-face {
+  font-family: Neue World Condensed Ultralight;
+  src: url(../fonts/NeueWorld-CondensedUltralight.otf);
+}
+
 body, html {
   height: 100%;
   margin: 0;
 }
+
+
   
 #blurry-circles{
   transition:opacity 500ms ease-out;
@@ -113,14 +125,15 @@ body, html {
 
 .landingpage {
   text-align: center;
+  position: relative;
+  top: 30%;
 }
 
 .landingpage h1 {
   position: relative;
-  font-family: Telegraf Regular;
-  font-size: 72px;
+  font-family: Neue World Condensed Ultralight;
+  font-size: 96px;
   font-weight: normal;
-  margin-top: 10%;
 }
 
 /*
@@ -147,7 +160,7 @@ body, html {
 .landingpage h2 {
   position: relative;
   font-family: ABC Diatype Regular;
-  font-size: 48px;
+  font-size: 36px;
   font-weight: normal;
 }
 
@@ -176,14 +189,14 @@ body, html {
   
   .landingpage h1 {
     position: relative;
-    font-family: Telegraf Regular;
-    font-size: 48px;
+    font-family: Neue World Condensed Ultralight;
+    font-size: 60px;
   }
   
   .landingpage h2 {
     position: relative;
     font-family: ABC Diatype Regular;
-    font-size: 36px;
+    font-size: 24px;
   }
   
   .landingpage a {
