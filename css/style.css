@@ -367,6 +367,10 @@ section .ueber_uns {
 
 
 /* ÜBER UNS*/
+.wrapper_landingpage {
+  width: 90%;
+  margin: auto;
+}
 
 .reihe {
   content: "";
@@ -377,7 +381,6 @@ section .ueber_uns {
 .reihe .column_left {
   float: left;
   width: 40%;
-  text-align: center;
   height: 200px;
 }
 
@@ -387,13 +390,13 @@ section .ueber_uns {
   font-weight: normal;
   padding: 0px 30px 0px 30px;
   position: relative;
+  float: left;
 }
 
 .reihe .column_right {
   float: left;
   width: 60%;
   height: 200px;
-  text-align: center;
 }
 
 .reihe .column_right p {
@@ -403,6 +406,7 @@ section .ueber_uns {
   padding: 0px 30px 0px 30px;
   line-height: 28px;
   position: relative;
+  text-align: right;
 }
 
 /* PROJEKTE */
