@@ -293,7 +293,7 @@ body, html {
 
 /* LANDINGPAGE */
 .landingpage_wrapper {
-  width: calc(100% - 90px);
+  width: calc(100% - 240px);
   margin: 60px auto;
 }
 
@@ -379,7 +379,7 @@ body, html {
 
 .reihe .column_left h2 {
   font-family: Neue World Condensed Ultralight;
-  font-size: 60px;
+  font-size: 72px;
   font-weight: normal;
   position: relative;
   float: left;
@@ -428,7 +428,7 @@ project-title h1 {
 }
 
 .wrapper {
-  width: calc(100% - 90px);
+  width: calc(100% - 240px);
   margin: 90px auto;
   height: 100%;
 }
