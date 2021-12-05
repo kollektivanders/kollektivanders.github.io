@@ -34,11 +34,6 @@ body, html {
   margin: 0;
 }
 
-.space {
-  width: 100%;
-  height: 80px;
-}
-
 /* MENÜ */
 .menu-open {
 	color: #000000;
@@ -299,7 +294,7 @@ body, html {
 /* LANDINGPAGE */
 .landingpage_wrapper {
   width: calc(100% - 90px);
-  margin: auto;
+  margin: 60px auto;
 }
 
 .landingpage {
@@ -341,7 +336,7 @@ body, html {
 
 .landingpage h2 {
   position: relative;
-  font-family: Kern;
+  font-family: ABC Diatype Regular;
   font-size: 30px;
   font-weight: normal;
   margin-bottom: 30px;
@@ -396,11 +391,12 @@ body, html {
 }
 
 .reihe .column_right p {
-  font-family: Kern;
+  font-family: ABC Diatype Regular;
   font-size: 24px;
   font-weight: normal;
   line-height: 28px;
   position: relative;
+  float: left;
 }
 /* ÜBER UNS ENDE */
 
@@ -414,7 +410,7 @@ project-title h1 {
 .project-categ {
   font-weight: lighter;
   font-size: 48px;
-  font-family: Kern;
+  font-family: ABC Diatype Regular;
 }
 
 .cursor {
@@ -490,11 +486,6 @@ project-title h1 {
     font-size: 24px;
   }
 
-  .space {
-    width: 100%;
-    height: 40px;
-  }
-
   .reihe .column_left {
     float: left;
     width: 100%;
@@ -506,8 +497,8 @@ project-title h1 {
     font-family: Neue World Condensed Ultralight;
     font-size: 60px;
     font-weight: normal;
-    padding: 0px 30px 0px 30px;
     position: relative;
+    margin-bottom: 20px;
   }
   
   .reihe .column_right {
@@ -517,24 +508,22 @@ project-title h1 {
   }
   
   .reihe .column_right p {
-    font-family: Kern;
+    font-family: ABC Diatype Regular;
     font-size: 24px;
     font-weight: normal;
-    padding: 0px 30px 0px 30px;
     line-height: 28px;
     position: relative;
   }
 
   .wrapper {
-    width: 85%;
+    width: calc(100% - 40px);
     margin: 90px auto;
     height: 100%;
   }
 
-  .wrapper_landingpage {
-    width: 90%;
-    margin: auto;
+  .landingpage_wrapper {
+    width: calc(100% - 50px);
+    margin: 50px auto;
   }
-
 
 }
