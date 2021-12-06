@@ -664,6 +664,13 @@ project-title h1 {
     margin: auto;
     gap: 15px;
   }
+
+  .landingpage_emblem {
+    position: relative;
+    width: 25%;
+    left: 50%;
+    margin-top: 90px;
+  }
   
   project-title h1 {
     font-weight: 300;
