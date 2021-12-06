@@ -271,11 +271,11 @@ body, html {
   }
 }
  
-#Hey {
+#animation {
 	height: auto
 }
   
-#container-hey {
+#wrapper-animation {
   position: relative;
   height: calc(100vh - 20px);
   width: calc(100% - 20px);
@@ -292,11 +292,6 @@ body, html {
 
 
 /* LANDINGPAGE */
-.landingpage_wrapper {
-  width: calc(100% - 240px);
-  margin: 60px auto;
-}
-
 .landingpage {
   text-align: center;
   position: relative;
@@ -307,7 +302,7 @@ body, html {
 .landingpage h1 {
   position: relative;
   font-family: Neue World Condensed Ultralight;
-  font-size: 120px;
+  font-size: 144px;
   font-weight: normal;
   mix-blend-mode: overlay;
   z-index: 1000;
@@ -337,12 +332,12 @@ body, html {
 .landingpage h2 {
   position: relative;
   font-family: ABC Diatype Regular;
-  font-size: 30px;
+  font-size: 36px;
   font-weight: normal;
   margin-bottom: 30px;
-  line-height: 32px;
-  padding-right: 20px;
-  padding-left: 20px;
+  line-height: 42px;
+  padding-right: 60px;
+  padding-left: 60px;
   font-weight: 500;
 }
 
@@ -352,7 +347,7 @@ body, html {
   background: chartreuse;
   font-family: ABC Diatype Regular;
   border-radius: 10px;
-  font-size: 24px;
+  font-size: 36px;
 }
 
 .landingpage a:hover {
@@ -361,11 +356,23 @@ body, html {
   background: rgb(191, 255, 126);
   font-family: ABC Diatype Regular;
   border-radius: 10px;
-  font-size: 24px;
+  font-size: 36px;
 }
 /* LANDINGPAGE ENDE */
 
 /* ÜBER UNS*/
+.landingpage_emblem {
+  position: relative;
+  width: 5%;
+  left: 50%;
+  margin-top: 40px;
+}
+
+.landingpage_wrapper {
+  width: calc(100% - 240px);
+  margin: 90px auto;
+}
+
 .reihe {
   content: "";
   clear: both;
@@ -379,22 +386,22 @@ body, html {
 
 .reihe .column_left h2 {
   font-family: Neue World Condensed Ultralight;
-  font-size: 72px;
+  font-size: 96px;
   font-weight: normal;
   position: relative;
   float: left;
 }
 
 .reihe .column_right {
-  float: left;
+  float: right;
   width: 60%;
 }
 
 .reihe .column_right p {
   font-family: ABC Diatype Regular;
-  font-size: 24px;
+  font-size: 36px;
   font-weight: normal;
-  line-height: 28px;
+  line-height: 42px;
   position: relative;
   float: left;
 }
@@ -403,7 +410,7 @@ body, html {
 /* PROJEKTE */
 project-title h1 {
   font-weight: 300;
-  font-size: 48px;
+  font-size: 64px;
   font-family: Neue World Condensed Ultralight;
 }
 
@@ -445,7 +452,7 @@ project-title h1 {
   z-index: 2;
   color: black;
   mix-blend-mode: color-burn;
-  font-size: 48px;
+  font-size: 60px;
   font-family: Neue World Condensed Ultralight;
 }
 
@@ -552,6 +559,8 @@ project-title h1 {
   padding: 20px 0;
   mix-blend-mode: difference;
   font-family: ABC Diatype Regular;
+  text-decoration: none;
+  color: inherit;
 }
 
 @keyframes float-text {
