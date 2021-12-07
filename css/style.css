@@ -37,6 +37,11 @@ body, html {
   animation-fill-mode: forwards;
 }
 
+hr {
+  width: 50%;
+  margin-bottom: 90px;
+}
+
 /* MENÜ */
 .menu-open {
 	color: #000000;
@@ -305,7 +310,7 @@ body, html {
 .landingpage h1 {
   position: relative;
   font-family: Neue World Condensed Ultralight;
-  font-size: 144px;
+  font-size: 120px;
   font-weight: normal;
   mix-blend-mode: overlay;
   z-index: 1000;
@@ -389,7 +394,7 @@ body, html {
 
 .reihe .column_left h2 {
   font-family: Neue World Condensed Ultralight;
-  font-size: 132px;
+  font-size: 120px;
   font-weight: normal;
   position: relative;
   float: left;
@@ -402,11 +407,12 @@ body, html {
 
 .reihe .column_right p {
   font-family: ABC Diatype Regular;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: normal;
-  line-height: 42px;
+  line-height: 36px;
   position: relative;
   float: left;
+  text-align: justify
 }
 /* ÜBER UNS ENDE */
 
@@ -442,6 +448,17 @@ project-title h1 {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 60px;
+}
+
+.wrapper .titel h2 {
+  font-size: 96px;
+  font-family: Neue World Condensed Ultralight;
+}
+
+.wrapper .titel p {
+  font-size: 30px;
+  font-family: ABC Diatype Regular;
+  line-height: 36px;
 }
 
 .project {
@@ -587,6 +604,10 @@ project-title h1 {
 
 /* MOBILE VARIANTE */
 @media only screen and (max-width: 900px) {
+  hr{
+    margin-bottom: 40px;
+  }
+
   .landingpage {
     text-align: center;
     top: 15%;
@@ -652,6 +673,24 @@ project-title h1 {
     width: calc(100% - 40px);
     margin: auto;
     height: 100%;
+  }
+
+  .wrapper .titel h2 {
+    font-family: Neue World Condensed Ultralight;
+    font-size: 60px;
+    font-weight: normal;
+    position: relative;
+    text-align-last: center;
+    float: none;
+  }
+  
+  .wrapper .titel p {
+    font-family: ABC Diatype Regular;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 28px;
+    position: relative;
+    margin-bottom: 40px;
   }
 
   .landingpage_wrapper {
