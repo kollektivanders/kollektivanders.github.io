@@ -32,6 +32,9 @@
 body, html {
   height: 100%;
   margin: 0;
+  animation: fadeInAnimation ease 2.2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 /* MENÜ */
