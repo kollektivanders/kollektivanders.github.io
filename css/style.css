@@ -462,7 +462,6 @@ project-title h1 {
   font-weight: normal;
   line-height: 36px;
   position: relative;
-  float: left;
   text-align: justify;
   margin-bottom: 70px;
 }
@@ -499,6 +498,7 @@ project-title h1 {
   align-items: center;
   margin: auto;
   gap: 15px;
+  margin-bottom: 90px;
 }
 
 .card-container {
@@ -630,9 +630,10 @@ project-title h1 {
 
 .gallery_column figcaption {
   font-size: 24px;
+  margin-top: 14px;
+  margin-bottom: 30px;
+  font-family: ABC Diatype Regular;
 }
-
-
 /* GALLERY ENDE */
 
 
