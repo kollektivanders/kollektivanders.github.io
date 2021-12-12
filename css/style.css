@@ -453,12 +453,18 @@ project-title h1 {
 .wrapper .titel h2 {
   font-size: 96px;
   font-family: Neue World Condensed Ultralight;
+  margin-bottom: 30px;
 }
 
 .wrapper .titel p {
-  font-size: 30px;
   font-family: ABC Diatype Regular;
+  font-size: 30px;
+  font-weight: normal;
   line-height: 36px;
+  position: relative;
+  float: left;
+  text-align: justify;
+  margin-bottom: 70px;
 }
 
 .project {
@@ -600,6 +606,34 @@ project-title h1 {
 .card-container:hover .text-wrapper {
   opacity: 1;
 }
+
+/* GALLERY */
+.gallery_row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.gallery_column {
+  -ms-flex: 32.7%; /* IE10 */
+  flex: 32.7%;
+  max-width: 32.7%;
+}
+
+.gallery_column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.gallery_column figcaption {
+  font-size: 24px;
+}
+
+
+/* GALLERY ENDE */
 
 
 /* MOBILE VARIANTE */
@@ -853,4 +887,22 @@ project-title h1 {
     font-family: ABC Diatype Regular;
   }
 
+  .gallery_row {
+    display: inherit;
+  }
+
+  .gallery_column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .gallery_column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
 }
