@@ -11,66 +11,9 @@
    Base styles: opinionated defaults
    ========================================================================== */
 @font-face {
-  font-family: 'Neue Montreal';
-  src: url('fonts/NeueMontreal-Bold.woff2') format('woff2'),
-    url('font/NeueMontreal-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Neue Montreal';
-  src: url('font/NeueMontreal-BoldItalic.woff2') format('woff2'),
-    url('fonts/NeueMontreal-BoldItalic.woff') format('woff');
-  font-weight: bold;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Neue Montreal';
-  src: url('fonts/NeueMontreal-Medium.woff2') format('woff2'),
-    url('fonts/NeueMontreal-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Neue Montreal';
-  src: url('fonts/NeueMontreal-LightItalic.woff2') format('woff2'),
-    url('fonts/NeueMontreal-LightItalic.woff') format('woff');
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Neue Montreal';
-  src: url('fonts/NeueMontreal-Light.woff2') format('woff2'),
-    url('fonts/NeueMontreal-Light.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Neue Montreal';
-  src: url('fonts/NeueMontreal-MediumItalic.woff2') format('woff2'),
-    url('fonts/NeueMontreal-MediumItalic.woff') format('woff');
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
   font-family: 'Neue Montreal Regular';
   src: url('fonts/NeueMontreal-Regular.woff2') format('woff2'),
     url('fonts/NeueMontreal-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
@@ -195,7 +138,7 @@ body {
 }
 
 .container .hero h1 {
-  font-family: 'Neue Montreal';
+  font-family: 'Neue Montreal Regular';
   font-weight: normal;
   font-size: 5vw;
   margin-top: 20.96069868995633vh;
