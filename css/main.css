@@ -66,8 +66,8 @@
 
 @font-face {
   font-family: 'Neue Montreal';
-  src: url('NeueMontreal-Regular.woff2') format('woff2'),
-    url('NeueMontreal-Regular.woff') format('woff');
+  src: url('/fonts/NeueMontreal-Regular.woff2') format('woff2'),
+    url('/fonts/NeueMontreal-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -163,7 +163,7 @@ body {
   padding: 0 0 0 32px;
   color: #000;
   font-size: 18px;
-  font-family: 'Neue Montreal Regular';
+  font-family: 'Neue Montreal';
   font-weight: normal;
 }
 
@@ -334,7 +334,7 @@ body {
   font-size: 40px;
   line-height: 52px;
   font-family: 'Canela Deck';
-  font-weight: 300;
+  font-weight: 100;
 }
 
 .content-container p {
