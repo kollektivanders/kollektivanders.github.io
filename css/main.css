@@ -65,7 +65,7 @@
 }
 
 @font-face {
-  font-family: 'Neue Montreal';
+  font-family: 'Neue Montreal Regular';
   src: url('fonts/NeueMontreal-Regular.woff2') format('woff2'),
     url('fonts/NeueMontreal-Regular.woff') format('woff');
   font-weight: normal;
@@ -163,7 +163,7 @@ body {
   padding: 0 0 0 32px;
   color: #000;
   font-size: 18px;
-  font-family: 'Neue Montreal';
+  font-family: 'Neue Montreal Regular';
   font-weight: normal;
 }
 
