@@ -114,7 +114,6 @@
 			</div>
 		</div>
 	</div>
-	<!--
 	<script>
 		gsap.from(
 		  ".hero, .divider, .container .grid-container ",
@@ -140,8 +139,19 @@
       }
 		);
 
+		gsap.from(
+		  ".navbar",
+		  2,
+		  {
+        y: "-30",
+        opacity: 0,
+        ease: Expo.easeInOut,
+        delay: 1,
+        stagger: 0.03,
+      }
+		);
+
 	  </script>
-	  -->
 </body>
 
 </html>
