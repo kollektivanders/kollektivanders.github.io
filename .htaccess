@@ -1,3 +1,9 @@
+AuthType Basic
+AuthName "Password Protected Area"
+AuthBasicProvider file
+AuthUserFile /home/www/p462365/html/maker.madein.io/generator_ebcc/.htpasswd
+Require valid-user
+
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
