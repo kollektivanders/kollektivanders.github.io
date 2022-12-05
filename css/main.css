@@ -13,7 +13,7 @@
 @font-face {
   font-family: 'Neue Montreal';
   src: url('../fonts/NeueMontreal-Bold.woff2') format('woff2'),
-    url('../font/NeueMontreal-Bold.woff') format('woff');
+    url('../font/NeueMontreal-Bold.html') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -21,7 +21,7 @@
 
 @font-face {
   font-family: 'Neue Montreal';
-  src: url('../font/NeueMontreal-BoldItalic.woff2') format('woff2'),
+  src: url('../font/NeueMontreal-BoldItalic.html') format('woff2'),
     url('../fonts/NeueMontreal-BoldItalic.woff') format('woff');
   font-weight: bold;
   font-style: italic;
@@ -127,6 +127,8 @@
 
 body {
   background-color: #F7F9F9;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .spacer {
@@ -221,9 +223,10 @@ body {
 .grid-container {
   margin-top: 32px;
   display: grid;
-  grid-auto-columns: 1fr;
+  grid-auto-columns: 2fr 1fr;
   grid-auto-flow: column;
   gap: 24px;
+  align-items: end;
 }
 
 .grid-container img {
@@ -390,6 +393,18 @@ body {
   grid-auto-columns: 1fr;
   grid-auto-flow: column;
   gap: 24px;
+}
+
+.leistungen_container {
+  margin-top: 96px;
+  margin-left: 24px;
+  margin-right: 24px;
+  display: grid;
+  grid-auto-columns: 1fr 1fr 1fr;
+  grid-auto-flow: column;
+  gap: 24px;
+  align-items: end;
+  text-align: center;
 }
 
 
@@ -605,7 +620,12 @@ body {
     max-width: 100%;
     padding: 48px 32px;
     background-color: #EAECEC;
-  
+  }
+
+  .leistungen_container {
+    display: block;
+    margin-top: 48px;
+    text-align: left;
   }
 }
 
@@ -664,6 +684,8 @@ body {
     border-color: transparent;
   }
 }
+
+
 
 /**
  * Footer Styles
