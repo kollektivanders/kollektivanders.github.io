@@ -330,14 +330,13 @@ body {
 }
 
 .content-container h2 {
-  font-size: 72px;
-  line-height: 86px;
+  font-size: 48px;
   font-family: 'Neue Montreal';
 }
 
 .content-container h3 {
-  font-size: 40px;
-  line-height: 52px;
+  font-size: 32px;
+  line-height: 41px;
   font-family: 'Canela Deck';
   font-weight: 100;
 }
@@ -346,7 +345,8 @@ body {
   font-size: 24px;
   line-height: 32px;
   font-family: 'Neue Montreal';
-  margin-bottom: 32px;
+  margin-bottom: 48px;
+  font-weight: 400;
 }
 
 .content-container a {
@@ -383,7 +383,7 @@ body {
 .container_grey {
   max-width: 100%;
   padding: 80px 32px;
-  background-color: #EAECEC;
+ 
 
 }
 
@@ -396,16 +396,57 @@ body {
 }
 
 .leistungen_container {
-  margin-top: 96px;
-  margin-left: 24px;
-  margin-right: 24px;
+  padding-top: 128px;
+  padding-bottom: 128px;
+  padding-left: 24px;
+  padding-right: 24px;
   display: grid;
   grid-auto-columns: 1fr 1fr 1fr;
   grid-auto-flow: column;
   gap: 24px;
   align-items: end;
   text-align: center;
+  background-color: #EAECEC;
 }
+
+.leistungen_container div {
+  text-align: left;
+  padding-right: 64px;
+}
+
+.leistungen_container div h3 {
+  font-size: 48px;
+  font-family: 'Neue Montreal';
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+
+.leistungen_container div h4 {
+  font-size: 24px;
+  line-height: 29px;
+  font-family: 'Neue Montreal';
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.leistungen_container div p {
+  font-size: 18px;
+  line-height: 22px;
+  font-family: 'Neue Montreal';
+  font-weight: 400;
+  margin-bottom: 32px;
+
+}
+
+.leistungen_container div a {
+  font-size: 16px;
+  font-family: 'Neue Montreal';
+  font-weight: 400;
+  margin-bottom: 32px;
+  text-decoration: underline;
+}
+
+
 
 
 @media only screen and (max-width: 768px) {
@@ -553,7 +594,7 @@ body {
   }
 
   .content-container {
-    margin-top: 16px;
+    margin-top: 32px;
     display: block;
     grid-auto-columns: 1fr;
     grid-auto-flow: column;
@@ -561,26 +602,21 @@ body {
   }
 
   .content-container h2 {
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 32px;
     font-family: 'Neue Montreal';
-  }
-
-  .container .content-container br {
-    display: none;
   }
   
   .content-container h3 {
-    font-size: 32px;
-    line-height: 41px;
+    font-size: 24px;
+    line-height: 31px;
     font-family: 'Canela Deck';
     font-weight: 100;
     margin-bottom: 16px;
   }
   
   .content-container p {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 24px;
     font-family: 'Neue Montreal';
     margin-bottom: 32px;
   }
