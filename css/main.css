@@ -383,8 +383,6 @@ body {
 .container_grey {
   max-width: 100%;
   padding: 80px 32px;
- 
-
 }
 
 .project-container {
@@ -446,7 +444,50 @@ body {
   text-decoration: underline;
 }
 
+.footer_container {
+  padding-top: 128px;
+  padding-bottom: 128px;
+  padding-left: 24px;
+  padding-right: 24px;
+  display: grid;
+  grid-auto-columns: 3fr 1fr;
+  grid-auto-flow: column;
+  gap: 24px;
+  align-items: start;
+  text-align: center;
+  background-color: #EAECEC;
+}
 
+.footer_container div {
+  text-align: left;
+}
+
+.footer_container div h4 {
+  font-size: 48px;
+  line-height: 58px;
+  font-family: 'Neue Montreal';
+  font-weight: 400;
+}
+
+.subfooter_container {
+  padding-top: 128px;
+  padding-bottom: 32px;
+  padding-left: 24px;
+  padding-right: 24px;
+  display: grid;
+  grid-auto-columns: 1fr 1fr 1fr;
+  grid-auto-flow: column;
+  gap: 24px;
+  align-items: end;
+  background-color: #EAECEC;
+  text-align: center;
+}
+
+.subfooter_container div h6 {
+  font-size: 16px;
+  font-family: 'Neue Montreal';
+  font-weight: 400;
+}
 
 
 @media only screen and (max-width: 768px) {
@@ -654,14 +695,44 @@ body {
 
   .container_grey {
     max-width: 100%;
-    padding: 48px 32px;
-    background-color: #EAECEC;
+    padding: 48px 24px;
   }
 
   .leistungen_container {
     display: block;
     margin-top: 48px;
     text-align: left;
+  }
+
+  .footer_container {
+    padding-top: 128px;
+    padding-bottom: 128px;
+    padding-left: 24px;
+    padding-right: 24px;
+    display: block;
+    grid-auto-columns: 3fr 1fr;
+    grid-auto-flow: column;
+    gap: 24px;
+    align-items: start;
+    text-align: center;
+    background-color: #EAECEC;
+  }
+  
+  .footer_container div:nth-child(1) {
+    text-align: left;
+    margin-bottom: 32px;
+  }
+
+  .footer_container div:nth-child(2) {
+    text-align: right;
+    margin-bottom: 32px;
+  }
+  
+  .footer_container div h4 {
+    font-size: 32px;
+    line-height: 38px;
+    font-family: 'Neue Montreal';
+    font-weight: 400;
   }
 }
 
