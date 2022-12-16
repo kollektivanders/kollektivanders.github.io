@@ -412,6 +412,14 @@ body {
   padding-right: 64px;
 }
 
+.leistungen_container div img {
+  width: 33%;
+  margin-bottom: 24px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .leistungen_container div h3 {
   font-size: 48px;
   font-family: 'Neue Montreal';
