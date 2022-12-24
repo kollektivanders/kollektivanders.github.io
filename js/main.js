@@ -69,7 +69,7 @@ cursorModifiers.forEach(curosrModifier => {
 });
 
 gsap.from(
-    ".hero, .divider, .container .grid-container ",
+    ".hero, .divider, .hero__container .grid-container ",
     2,
     {
   y: "-200",
@@ -93,7 +93,7 @@ gsap.from(
   );
 
   gsap.from(
-    ".navbar",
+    ".navigation",
     2,
     {
   y: "-30",
@@ -178,4 +178,3 @@ gsap.from(
   */
 
   /* https://codepen.io/231afsgdh231/pen/vYxvrOP */
-

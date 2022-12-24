@@ -1,15 +1,3 @@
-/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
-
-/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
 @font-face {
   font-family: 'Neue Montreal';
   src: url('../fonts/NeueMontreal-Bold.woff2') format('woff2'),
@@ -131,6 +119,17 @@ body {
   overflow-y: scroll;
 }
 
+::-moz-selection {
+  /* Code for Firefox */
+  color: #F7F9F9;
+  background: #000000;
+}
+
+::selection {
+  color: #F7F9F9;
+  background: #000000;
+}
+
 .spacer {
   margin: 128px 0;
 }
@@ -143,11 +142,11 @@ body {
   margin-bottom: 128px;
 }
 
-.navbar {
+.navigation {
   position: relative;
 }
 
-.navbar ul {
+.navigation ul {
   margin: 0;
   padding: 24px 0;
   list-style-type: none;
@@ -156,11 +155,11 @@ body {
   margin: 0 32px 0 32px;
 }
 
-.navbar ul li {
+.navigation ul li {
   display: inline;
 }
 
-.navbar ul li a {
+.navigation ul li a {
   text-decoration: none;
   padding: 0 0 0 32px;
   color: #000;
@@ -169,21 +168,21 @@ body {
   font-weight: normal;
 }
 
-.navbar ul li a img {
+.navigation ul li a img {
   margin-top: -8px;
 }
 
-.container {
+.hero__container {
   max-width: 100%;
   margin: 0 32px;
 }
 
-.container .subhero {
+.hero__container .subhero {
   width: 100%;
   margin-top: 24px;
 }
 
-.container .subhero h4 {
+.hero__container .subhero h4 {
   font-family: 'Canela Deck';
   font-weight: 100;
   font-size: 20px;
@@ -192,31 +191,31 @@ body {
   color: black;
 }
 
-.container .hero {
+.hero__container .hero {
   width: 90%;
 }
 
-.container .hero h1 {
+.hero__container .hero h1 {
   font-family: 'Neue Montreal';
   font-weight: normal;
-  font-size: 5vw;
+  font-size: 4vw;
   margin-top: 20.96069868995633vh;
-  line-height: 5.7vw;
+  line-height: 3.0vw;
   color: black;
   margin-bottom: 32px;
 }
 
-.container .hero h1 span {
+.hero__container .hero h1 span {
   font-family: 'Canela Deck';
   font-weight: 100;
-  font-size: 5vw;
+  font-size: 4vw;
   margin-top: 20.96069868995633vh;
   line-height: 5.7vw;
   color: black;
   margin-bottom: 32px;
 }
 
-.container .divider {
+.hero__container .divider {
   border-bottom: 1px solid #000000;
 }
 
@@ -225,7 +224,7 @@ body {
   display: grid;
   grid-auto-columns: 2fr 1fr;
   grid-auto-flow: column;
-  gap: 24px;
+  grid-gap: 32px;
   align-items: end;
 }
 
@@ -275,7 +274,7 @@ body {
   display: grid;
   grid-auto-columns: 2fr 1fr;
   grid-auto-flow: column;
-  gap: 24px;
+  gap: 32px;
   align-items: end;
 }
 
@@ -326,7 +325,7 @@ body {
   display: grid;
   grid-auto-columns: 1fr;
   grid-auto-flow: column;
-  gap: 24px;
+  gap: 32px;
 }
 
 .content-container h2 {
@@ -345,7 +344,7 @@ body {
   font-size: 24px;
   line-height: 32px;
   font-family: 'Neue Montreal';
-  margin-bottom: 48px;
+  margin-bottom: 32px;
   font-weight: 400;
 }
 
@@ -363,6 +362,7 @@ body {
   text-transform: uppercase;
   margin-bottom: 32px;
   transition: all 0.3s;
+  text-decoration: none;
 }
 
 .content-container a:hover {
@@ -390,18 +390,18 @@ body {
   display: grid;
   grid-auto-columns: 1fr;
   grid-auto-flow: column;
-  gap: 24px;
+  gap: 32px;
 }
 
 .leistungen_container {
   padding-top: 128px;
   padding-bottom: 128px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 32px;
+  padding-right: 32px;
   display: grid;
   grid-auto-columns: 1fr 1fr 1fr;
   grid-auto-flow: column;
-  gap: 24px;
+  gap: 32px;
   align-items: end;
   text-align: center;
   background-color: #EAECEC;
@@ -410,6 +410,9 @@ body {
 .leistungen_container div {
   text-align: left;
   padding-right: 64px;
+  background-color: #F7F9F9;
+  padding: 20px;
+  border-radius: 16px;
 }
 
 .leistungen_container div img {
@@ -449,7 +452,9 @@ body {
   font-family: 'Neue Montreal';
   font-weight: 400;
   margin-bottom: 32px;
-  text-decoration: underline;
+  border-bottom: 1px solid #000000;
+  text-decoration: none;
+  color: #000000;
 }
 
 .footer_container {
@@ -460,10 +465,11 @@ body {
   display: grid;
   grid-auto-columns: 3fr 1fr;
   grid-auto-flow: column;
-  gap: 24px;
+  gap: 32px;
   align-items: start;
   text-align: center;
   background-color: #EAECEC;
+  text-decoration: none;
 }
 
 .footer_container div {
@@ -477,6 +483,12 @@ body {
   font-weight: 400;
 }
 
+.footer_container div h4 span {
+  text-decoration: none;
+  color: #000000;
+  border-bottom: 4px solid #000000;
+}
+
 .subfooter_container {
   padding-top: 128px;
   padding-bottom: 32px;
@@ -485,7 +497,7 @@ body {
   display: grid;
   grid-auto-columns: 1fr 1fr 1fr;
   grid-auto-flow: column;
-  gap: 24px;
+  gap: 32px;
   align-items: end;
   background-color: #EAECEC;
   text-align: center;
@@ -499,7 +511,7 @@ body {
 
 
 @media only screen and (max-width: 768px) {
-  .navbar ul {
+  .navigation ul {
     margin: 0;
     padding: 24px 0;
     list-style-type: none;
@@ -507,12 +519,12 @@ body {
     border-bottom: 1px solid #000;
     margin: 0 24px 0 24px;
   }
-  
-  .navbar ul li {
+
+  .navigation ul li {
     display: inline;
   }
-  
-  .navbar ul li a {
+
+  .navigation ul li a {
     text-decoration: none;
     padding: 0 0 0 24px;
     color: #000;
@@ -520,12 +532,12 @@ body {
     font-family: 'Neue Montreal';
     font-weight: normal;
   }
-  
-  .navbar ul li a img {
+
+  .navigation ul li a img {
     margin-top: -8px;
   }
 
-  .container {
+  .hero__container {
     max-width: 100%;
     margin: 0 24px;
   }
@@ -558,17 +570,17 @@ body {
     font-family: 'Neue Montreal';
   }
 
-  .container .hero h1 {
+  .hero__container .hero h1 {
     font-family: 'Neue Montreal';
     font-weight: normal;
-    font-size: 2.5em;
+    font-size: 2em;
     margin-top: 20.96069868995633vh;
     line-height: 1.2em;
     color: black;
     margin-bottom: 32px;
   }
 
-  .container .hero h1 span {
+  .hero__container .hero h1 span {
     font-family: 'Canela Deck';
     font-weight: 100;
     font-size: 0.9em;
@@ -643,18 +655,18 @@ body {
   }
 
   .content-container {
-    margin-top: 32px;
+    margin-top: 24px;
     display: block;
     grid-auto-columns: 1fr;
     grid-auto-flow: column;
-    gap: 24px;
+    gap: 32px;
   }
 
   .content-container h2 {
     font-size: 32px;
     font-family: 'Neue Montreal';
   }
-  
+
   .content-container h3 {
     font-size: 24px;
     line-height: 31px;
@@ -662,14 +674,14 @@ body {
     font-weight: 100;
     margin-bottom: 16px;
   }
-  
+
   .content-container p {
     font-size: 20px;
     line-height: 24px;
     font-family: 'Neue Montreal';
     margin-bottom: 32px;
   }
-  
+
   .content-container a {
     padding: 16px 48px;
     font-size: 18px;
@@ -684,8 +696,9 @@ body {
     text-transform: uppercase;
     margin-bottom: 64px;
     transition: all 0.3s;
+    text-decoration: none;
   }
-  
+
   .content-container a:hover {
     padding: 16px 48px;
     font-size: 18px;
@@ -701,6 +714,10 @@ body {
     margin-bottom: 64px;
   }
 
+  .content-container br {
+    display: none;
+  }
+
   .container_grey {
     max-width: 100%;
     padding: 48px 24px;
@@ -712,6 +729,10 @@ body {
     text-align: left;
   }
 
+  .leistungen_container div {
+    padding-right: 0px;
+  }
+
   .footer_container {
     padding-top: 128px;
     padding-bottom: 128px;
@@ -720,12 +741,12 @@ body {
     display: block;
     grid-auto-columns: 3fr 1fr;
     grid-auto-flow: column;
-    gap: 24px;
+    gap: 32px;
     align-items: start;
     text-align: center;
     background-color: #EAECEC;
   }
-  
+
   .footer_container div:nth-child(1) {
     text-align: left;
     margin-bottom: 32px;
@@ -735,7 +756,7 @@ body {
     text-align: right;
     margin-bottom: 32px;
   }
-  
+
   .footer_container div h4 {
     font-size: 32px;
     line-height: 38px;
@@ -768,15 +789,15 @@ body {
       width 0.3s cubic-bezier(0.25, 1, 0.5, 1),
       height 0.3s cubic-bezier(0.25, 1, 0.5, 1);
   }
-  
-  #cursor.arrow .cursor__circle{
+
+  #cursor.arrow .cursor__circle {
     width: 128px;
     height: 128px;
     background-color: #073099;
     border-color: #073099;
   }
-  
-  #cursor.arrow::after{
+
+  #cursor.arrow::after {
     content: '';
     position: absolute;
     left: -50%;
@@ -787,12 +808,12 @@ body {
     background-repeat: no-repeat;
     background-position: center;
   }
-  
-  #cursor.subtle .cursor__circle{
+
+  #cursor.subtle .cursor__circle {
     opacity: 0.16;
   }
-  
-  #cursor.overlay .cursor__circle{
+
+  #cursor.overlay .cursor__circle {
     width: 48px;
     height: 48px;
     background-color: rgba(227, 222, 193, 0.08);
