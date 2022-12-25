@@ -296,6 +296,7 @@ body {
   margin-right: 8px;
   color: #888888;
   transition: all 0.3s;
+  text-transform: uppercase;
 }
 
 .grid-container-image-2 {
@@ -334,6 +335,7 @@ body {
   margin-right: 8px;
   color: #888888;
   transition: all 0.3s;
+  text-transform: uppercase;
 }
 
 .content-container {
@@ -411,12 +413,11 @@ body {
 
 .leistungen__container {
   max-width: 100%;
-  padding: 0 32px;
+  padding: 128px 32px;
   background-color: #EAECEC;
 }
 
 .leistungen__container__title {
-  margin-top: 48px;
   display: grid;
   grid-auto-columns: 1fr;
   grid-auto-flow: column;
@@ -424,14 +425,12 @@ body {
 }
 
 .leistungen__container__title h2 {
-  margin-top: 128px;
   font-size: 48px;
   font-family: 'Neue Montreal';
 }
 
 .leistungen__container__layout {
   margin-top: 64px;
-  padding-bottom: 128px;
   display: grid;
   grid-auto-columns: 1fr 1fr 1fr;
   grid-auto-flow: column;
@@ -561,7 +560,7 @@ body {
     text-decoration: none;
     padding: 0 0 0 24px;
     color: #000;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Neue Montreal';
     font-weight: normal;
   }
@@ -590,10 +589,6 @@ body {
 
   .grid-container {
     display: block;
-  }
-
-  .grid-container img {
-    margin-bottom: 8px;
   }
 
   .grid-container figcaption {
@@ -629,7 +624,7 @@ body {
     font-family: 'Neue Montreal';
     margin-right: 8px;
     color: #737373;
-    margin-bottom: 32px;
+    margin-bottom: 48px;
     text-transform: uppercase;
   }
 
@@ -752,16 +747,19 @@ body {
     padding: 48px 24px;
   }
 
+  .leistungen__container {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
   .leistungen__container__title h2 {
-    margin-top: 64px;
     font-size: 32px;
   }
 
   .leistungen__container__layout {
+    margin-top: 48px;
     display: block;
-    margin-top: 32px;
     text-align: left;
-    padding-bottom: 64px;
   }
 
   .leistungen__container__layout div {
@@ -770,8 +768,8 @@ body {
   }
 
   .footer_container {
-    padding-top: 128px;
-    padding-bottom: 128px;
+    padding-top: 64px;
+    padding-bottom: 64px;
     padding-left: 24px;
     padding-right: 24px;
     display: block;
