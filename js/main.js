@@ -178,3 +178,24 @@ gsap.from(
   */
 
   /* https://codepen.io/231afsgdh231/pen/vYxvrOP */
+
+  // Loading page complete
+window.addEventListener("load", function() 
+{
+	hideAll();
+	inViewCheck();
+	
+	window.addEventListener("scroll", function() {
+		inViewCheck();
+		scrollBtnVisible();
+		stickyNavToggle();
+	});	
+
+	var preloader = document.getElementById('page-loading-blocs-notifaction');
+	
+	// Remove page loading UI
+	if (preloader)
+	{
+		preloader.classList.add('hero__container');
+	}
+})

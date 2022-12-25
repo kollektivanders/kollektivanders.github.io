@@ -122,6 +122,36 @@ body {
   */
 }
 
+.page-preloader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 100000;
+  background: #F7F9F9 url("../img/loading.gif") no-repeat center center;
+  background-size: 5%;
+  animation-name: preloader-fade;
+  animation-delay: 0.8s;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+.preloader-complete {
+  animation-delay: 0.1s;
+}
+
+@keyframes preloader-fade {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 ::-moz-selection {
   /* Code for Firefox */
   color: #F7F9F9;
@@ -178,6 +208,7 @@ body {
 .hero__container {
   max-width: 100%;
   margin: 0 32px;
+  animation-delay: 0.1s;
 }
 
 .hero__container .subhero {
@@ -633,8 +664,7 @@ body {
     margin-top: 48px;
   }
 
-  .grid-container-image-1 img {
-  }
+  .grid-container-image-1 img {}
 
   .grid-container-image-1 figcaption {
     margin-top: 8px;
@@ -657,8 +687,7 @@ body {
     margin-top: 48px;
   }
 
-  .grid-container-image-2 img {
-  }
+  .grid-container-image-2 img {}
 
   .grid-container-image-2 figcaption {
     margin-top: 8px;
