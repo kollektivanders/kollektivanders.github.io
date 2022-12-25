@@ -196,6 +196,6 @@ window.addEventListener("load", function()
 	// Remove page loading UI
 	if (preloader)
 	{
-		preloader.classList.add('hero__container');
+		preloader.classList.add('preloader-complete');
 	}
 })

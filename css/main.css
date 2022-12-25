@@ -137,7 +137,7 @@ body {
 }
 
 .preloader-complete {
-  animation-delay: 0.1s;
+  animation-delay: 0.05s;
 }
 
 @keyframes preloader-fade {
