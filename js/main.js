@@ -69,7 +69,7 @@ cursorModifiers.forEach(curosrModifier => {
 });
 
 gsap.from(
-    ".hero, .divider, .container .grid-container ",
+    ".hero, .divider, .hero__container .grid-container ",
     2,
     {
   y: "-200",
