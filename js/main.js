@@ -93,7 +93,7 @@ gsap.from(
   );
 
   gsap.from(
-    ".navbar",
+    ".navigation",
     2,
     {
   y: "-30",
