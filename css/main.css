@@ -574,6 +574,20 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+  .page-preloader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 100000;
+    background: #F7F9F9 url("../img/loading.gif") no-repeat center center;
+    background-size: 20%;
+    animation-name: preloader-fade;
+    animation-delay: 0.8s;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+  }
+
   .navigation ul {
     margin: 0;
     padding: 24px 0;
