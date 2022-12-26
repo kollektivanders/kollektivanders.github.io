@@ -276,7 +276,7 @@ body {
 .grid-container figcaption {
   margin-top: 16px;
   margin-bottom: 16px;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 26px;
   font-family: 'Neue Montreal';
 }
@@ -315,7 +315,7 @@ body {
 .grid-container-image-1 figcaption {
   margin-top: 16px;
   margin-bottom: 16px;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 26px;
   font-family: 'Neue Montreal';
 }
@@ -354,7 +354,7 @@ body {
 .grid-container-image-2 figcaption {
   margin-top: 16px;
   margin-bottom: 16px;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 26px;
   font-family: 'Neue Montreal';
 }
@@ -634,6 +634,7 @@ body {
 
   .grid-container {
     display: block;
+    margin-top: 24px;
   }
 
   .grid-container figcaption {
@@ -650,7 +651,7 @@ body {
     margin-top: 20.96069868995633vh;
     line-height: 1.2em;
     color: black;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
   }
 
   .hero__container .hero h1 span {
@@ -789,8 +790,10 @@ body {
   }
 
   .leistungen__container {
-    padding-top: 64px;
-    padding-bottom: 64px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 
   .leistungen__container__title h2 {
@@ -804,7 +807,6 @@ body {
   }
 
   .leistungen__container__layout div {
-    padding-right: 0px;
     margin-bottom: 24px;
   }
 
