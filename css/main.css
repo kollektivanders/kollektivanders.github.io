@@ -620,14 +620,14 @@ body {
   }
 
   .spacer {
-    margin: 64px 0;
+    margin: 48px 0;
   }
 
   .bild_spacer img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 104px;
+    margin-top: 86px;
     margin-bottom: 64px;
     width: 20%;
   }
@@ -786,12 +786,12 @@ body {
 
   .container_grey {
     max-width: 100%;
-    padding: 48px 24px;
+    padding: 24px 24px 62px 24px;
   }
 
   .leistungen__container {
     padding-top: 48px;
-    padding-bottom: 48px;
+    padding-bottom: 24px;
     padding-left: 24px;
     padding-right: 24px;
   }
