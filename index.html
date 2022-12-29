@@ -15,21 +15,21 @@
 	<link rel="canonical" href="index.html" />
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/locomotive.css">
 	<meta name="theme-color" content="#F7F9F9">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-	<script src="https://cdn.flourish.rocks/smooth-resize-v0.min.js"></script>
 	<script defer data-domain="kollektivanders.github.io" src="https://plausible.io/js/script.js"></script>
 </head>
 
-<body>
-
-<!-- Preloader -->
-<div id="page-loading-blocs-notifaction" class="page-preloader"></div>
-<!-- Preloader END -->
-
+<body data-scroll>
+	<!-- Preloader -->
+	<div id="page-loading-blocs-notifaction" class="page-preloader"></div>
+	<!-- Preloader END -->
+	
 	<div id="cursor">
 		<div class="cursor__circle"></div>
 	</div>
+
 	<nav class="navigation">
 		<ul>
 			<li><a><img src="img/logo.svg" style="float: left; width: 64px;"></a></li>
@@ -47,8 +47,8 @@
 			<h1>KollektivAnders® is a multidisciplinary design studio with focus on branding, digital products
 				<span>&</span> experience.</h1>
 		</div>
-		<div class="divider"></div>
 	</div>
+	<div class="divider"></div>
 	<div class="hero__container">
 		<div class="grid-container">
 			<div>
@@ -201,10 +201,12 @@
 			<h6>Berlin Agency of the year</h6>
 		</div>
 	</div>
+	<script type="text/javascript" rel="preload" src="js/locomotive-scroll.min.js"></script>
 	<script type="text/javascript" rel="preload" src="js/jquery.js"></script> <!-- Load Tilt.js library -->
 	<script type="text/javascript" rel="preload" src="js/tilt.jquery.js"></script> <!-- Load Tilt.js library -->
 	<script type="text/javascript" rel="preload" src="js/main.js"></script>
 	<script type="text/javascript" rel="preload" src="js/plugins.js"></script>
+	
 </body>
 
 </html>
