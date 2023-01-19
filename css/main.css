@@ -117,6 +117,8 @@ body {
   background-color: #F7F9F9;
   overflow-x: hidden;
   overflow-y: scroll;
+  -webkit-font-smoothing: antialiased;
+  cursor: url('../img/cursor.svg');
 }
 
 /* Page Preloader Start */
@@ -160,7 +162,7 @@ body {
   pointer-events: none;
   will-change: transform;
   mix-blend-mode: difference;
-  cursor: none;
+  cursor: url('../img/cursor.svg');
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -233,7 +235,9 @@ body {
   padding: 24px 0;
   list-style-type: none;
   text-align: right;
+  /*
   border-bottom: 1px solid #000;
+  */
   margin: 0 32px 0 32px;
 }
 
@@ -257,31 +261,38 @@ body {
 
 .hero__container {
   max-width: 100%;
-  margin: 16px 32px 32px 32px;
+  margin: 0px 32px 0px 32px;
 }
 
 .hero__container .subhero {
-  width: 100%;
+  width: fit-content;
   margin-top: 16px;
+  text-align: end;
+  position: relative;
+  margin-left: auto;
 }
 
 .hero__container .subhero h4 {
-  font-family: 'Canela Deck';
-  font-weight: 100;
+  font-family: 'Neue Montreal';
+  font-weight: 400;
   font-size: 20px;
-  line-height: 25px;
-  color: black;
+  line-height: 24px;
+  color: #F6F6F6;
+  background-color: #000000;
+  padding: 16px 24px 16px 24px;
+  border-radius: 16px 16px 0px 0px;
 }
 
 .hero__container .hero {
   width: 90%;
+  margin-bottom: 96px;
 }
 
 .hero__container .hero h1 {
   font-family: 'Neue Montreal';
   font-weight: normal;
   font-size: 4vw;
-  margin-top: 20.96069868995633vh;
+  margin-top: 18vh;
   line-height: 3.0vw;
   color: black;
 }
@@ -659,7 +670,6 @@ body {
     padding: 24px 0;
     list-style-type: none;
     text-align: right;
-    border-bottom: 1px solid #000;
     margin: 0 24px 0 24px;
   }
 
@@ -713,8 +723,8 @@ body {
   .hero__container .hero h1 {
     font-family: 'Neue Montreal';
     font-weight: normal;
-    font-size: 2em;
-    margin-top: 20.96069868995633vh;
+    font-size: 2.4em;
+    margin-top: 12vh;
     line-height: 1.2em;
     color: black;
     margin-bottom: 24px;
@@ -724,7 +734,7 @@ body {
     font-family: 'Canela Deck';
     font-weight: 100;
     font-size: 0.9em;
-    margin-top: 20.96069868995633vh;
+    margin-top: 10vh;
     line-height: 1.2em;
     color: black;
     margin-bottom: 32px;
