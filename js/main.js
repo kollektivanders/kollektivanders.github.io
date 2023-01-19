@@ -84,7 +84,7 @@ gsap.from(
     ".subhero",
     2,
     {
-  y: "-219",
+  y: "-100",
   opacity: 0,
   ease: Expo.easeInOut,
   delay: 0.4,
