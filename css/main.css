@@ -692,7 +692,7 @@ body {
 
   .hero__container {
     max-width: 100%;
-    margin: 0 24px;
+    margin: 0 16px;
   }
 
   .spacer {
@@ -862,14 +862,14 @@ body {
 
   .container_grey {
     max-width: 100%;
-    padding: 24px 24px 62px 24px;
+    padding: 24px 16px 62px 16px;
   }
 
   .leistungen__container {
     padding-top: 48px;
     padding-bottom: 24px;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .leistungen__container__title h2 {
@@ -889,8 +889,8 @@ body {
   .footer_container {
     padding-top: 64px;
     padding-bottom: 64px;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
     display: block;
     grid-auto-columns: 3fr 1fr;
     grid-auto-flow: column;
