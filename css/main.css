@@ -106,6 +106,22 @@
   font-display: swap;
 }
 
+:root {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #000000; 
+}
 
 * {
   margin: 0;
@@ -687,7 +703,8 @@ body {
   }
 
   .navigation ul li a img {
-    margin-top: -12px;
+    margin-top: -8px;
+    max-width: 10%;
   }
 
   .hero__container {
